@@ -41,7 +41,6 @@ class Snake:
 
 # Standard mode 0 east, 90 north, 180 west, 270 south - setheading
     def move_up(self):
-        print("move up")
         if self.current_direction == Direction.Up or self.current_direction == Direction.Down:
             return
 
