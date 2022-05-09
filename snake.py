@@ -78,10 +78,7 @@ class Snake:
 
     def check_collision_with_body(self):
         head = self.fragments[0]
-        for fragment in self.fragments:
-            if fragment == head:
-                continue
-
+        for fragment in self.fragments[1:]:
             if head.distance(fragment) < 1:
                 fragment.color("red")
                 return True
